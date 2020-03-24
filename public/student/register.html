@@ -1,0 +1,53 @@
+<!-- REQUIREMEMTS:
+
+- text fields to register if not already registered
+- when presses submit:
+    - attempt to register user to firebase
+        - error if registration fails and display error (make short and clear, it's for kids)
+        - attempt login if registration suceeds
+        - make new entry to databse with userid from login, name, bithday,
+        - proceed to homepage
+
+      -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Visual Programming</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase.js"></script>
+    <script src="../script.js"></script>
+    <script src="scripts/register.js"></script>
+
+  </head>
+  <body>
+    <form id="alarm" target="_self">
+      <h3>What is your name?</h3>
+      First Name: <input type="text" id="fname"><br>
+      Last Name: <input type="text" id="lname"><br>
+
+      <h3>What is your birthday?</h3>
+      <p>Enter in the form, DayDay/MonthMonth/YearYear. For example, if I was born on January 9th, 2005, I would enter 09/01/05 because the 9th is the 09 day, January is the first month, and I take the last 2 digits of 2005.</p>
+      <br>
+      Bithday (DD/MM/YY): <input type="text" id="birthday"><br>
+
+      <h3>Lets write down your scratch account</h3>
+      Scratch Username: <input type="text" id="scratch-user"><br>
+      Scratch Password: <input type="text" id="scratch-pass"><br>
+    </form>
+    <button type="button" onclick="register()">Register</button>
+  </body>
+</html>
+
+
+
+<!-- checks that need to be done:
+  - capitalize first name if not already
+  - capitalize last name if not already
+  - birthday is in DDMMYY format
+  - remove /'s from birthdays
+
+Before submitting
+  - need to convert email to 'fname-lname@codeoneprogramming.com' -->

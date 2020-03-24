@@ -1,0 +1,39 @@
+<!-- Input tags to take the kids' credentials. Check with firebase authentication and login if returns valid and give error if invalid
+
+Nicely designed with some pretty pictures and thoughtful layouts. See unsplash.com for amazing pictures
+
+Credentials should be:
+  user: first name and last name
+  pass: birthday (MMDDYY) -->
+
+
+<!-- Needs to link to register page -->
+
+
+
+<!-- ON LOGIN
+  - need to convert names to 'fname_lname@codeoneprogramming.com' -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase.js"></script>
+    <script src="../script.js"></script>
+    <script src="scripts/login.js"></script>
+
+  </head>
+  <body>
+    <form id="alarm" target="_self">
+      <h3>What is your name?</h3>
+      First Name: <input type="text" id="fname"><br>
+      Last Name: <input type="text" id="lname"><br>
+
+      <h3>What is your birthday?</h3>
+      Bithday (DD/MM/YY): <input type="text" id="birthday"><br>
+
+    </form>
+    <button type="button" onclick="login()">Register</button>
+  </body>
+</html>
