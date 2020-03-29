@@ -11,6 +11,8 @@ firebase-debug.log*
 
 # Firebase config
 public/script.js
+public/.DS_Store
+.DS_Store
 
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
